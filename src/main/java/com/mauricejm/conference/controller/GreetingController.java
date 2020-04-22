@@ -13,4 +13,9 @@ public class GreetingController {
         model.put("message", "Hello Maurice from a Java class");
         return "greeting";
     }
+    @GetMapping("thyme")
+    public String thyme(Map<String, Object> model){
+        model.put("message", "Hello from thymeleaf");
+        return "thyme";
+    }
 }
