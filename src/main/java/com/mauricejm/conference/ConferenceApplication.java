@@ -2,12 +2,13 @@ package com.mauricejm.conference;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
 @SpringBootApplication
-public class ConferenceappApplication {
+public class ConferenceApplication extends SpringBootServletInitializer {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ConferenceappApplication.class, args);
+		SpringApplication.run(ConferenceApplication.class, args);
 	}
 
 }
